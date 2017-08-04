@@ -13,7 +13,7 @@ public class Grade {
 
     private String gradeDesc;       //描述
 
-    private String gradeStatus;          //班级状态
+    private String gradeStatus;     //班级状态
 
     private Date createTime;        //添加时间
 
