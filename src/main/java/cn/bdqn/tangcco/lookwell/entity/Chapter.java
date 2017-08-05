@@ -10,27 +10,27 @@ public class Chapter {
      course_idint(11) NULL
      chapter_namevarchar(20) NULL
      durationint(11) NULL*/
-    private Integer ChapterId;
+    private Integer chapterId;
     private Course course;
-    private String ChapterName;
+    private String chapterName;
     private Integer duration;
 
     @Override
     public String toString() {
         return "Chapter{" +
-                "ChapterId=" + ChapterId +
+                "chapterId=" + chapterId +
                 ", course=" + course +
-                ", ChapterName='" + ChapterName + '\'' +
+                ", chapterName='" + chapterName + '\'' +
                 ", duration=" + duration +
                 '}';
     }
 
     public Integer getChapterId() {
-        return ChapterId;
+        return chapterId;
     }
 
     public void setChapterId(Integer chapterId) {
-        ChapterId = chapterId;
+        this.chapterId = chapterId;
     }
 
     public Course getCourse() {
@@ -42,11 +42,11 @@ public class Chapter {
     }
 
     public String getChapterName() {
-        return ChapterName;
+        return chapterName;
     }
 
     public void setChapterName(String chapterName) {
-        ChapterName = chapterName;
+        this.chapterName = chapterName;
     }
 
     public Integer getDuration() {
@@ -58,9 +58,9 @@ public class Chapter {
     }
 
     public Chapter(Integer chapterId, Course course, String chapterName, Integer duration) {
-        ChapterId = chapterId;
+        this.chapterId = chapterId;
         this.course = course;
-        ChapterName = chapterName;
+        this.chapterName = chapterName;
         this.duration = duration;
     }
 
