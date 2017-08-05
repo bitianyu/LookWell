@@ -78,9 +78,9 @@ public class GradeTest extends TestBase {
         System.out.println(count);
     }
 
-    //查询全部课程
+    //查询全部班级
     @Test
-    public void testQueryAllCourse() {
+    public void testQueryAllGrade() {
         List<Grade> gradeList = gradeService.queryAllGrade();
         for (int i = 0; i < gradeList.size(); i++) {
             System.out.println(gradeList.get(i));
