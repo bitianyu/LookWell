@@ -2,7 +2,7 @@ package testuser;
 
 import base.TestBase;
 import cn.bdqn.tangcco.lookwell.entity.Tbuser;
-import cn.bdqn.tangcco.lookwell.tbuser.service.TbuserService;
+import cn.bdqn.tangcco.lookwell.tbuser.services.TbuserService;
 import org.junit.Test;
 
 import javax.annotation.Resource;

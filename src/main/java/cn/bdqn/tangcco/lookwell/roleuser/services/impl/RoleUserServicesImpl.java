@@ -1,21 +1,20 @@
-package cn.bdqn.tangcco.lookwell.roleuser.service;
+package cn.bdqn.tangcco.lookwell.roleuser.services.impl;
 
 import cn.bdqn.tangcco.lookwell.entity.RoleUser;
 import cn.bdqn.tangcco.lookwell.entity.Tbuser;
 import cn.bdqn.tangcco.lookwell.roleuser.dao.RoleUserMapper;
+import cn.bdqn.tangcco.lookwell.roleuser.services.RoleUserServices;
 import cn.bdqn.tangcco.lookwell.tbuser.dao.TbuserMapper;
-import cn.bdqn.tangcco.lookwell.tbuser.service.TbuserService;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpSession;
-import java.util.Date;
 
 /**
  * Created by gys on 2017/8/4.
  */
 @Service
-public class RoleUserServiceImpl implements RoleUserService {
+public class RoleUserServicesImpl implements RoleUserServices {
     @Resource
     RoleUserMapper roleUserMapper;
     @Resource

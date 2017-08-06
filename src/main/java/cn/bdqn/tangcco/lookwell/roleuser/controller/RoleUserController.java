@@ -4,7 +4,7 @@ package cn.bdqn.tangcco.lookwell.roleuser.controller;
 import cn.bdqn.tangcco.lookwell.bean.Msg;
 import cn.bdqn.tangcco.lookwell.entity.RoleUser;
 import cn.bdqn.tangcco.lookwell.entity.Tbuser;
-import cn.bdqn.tangcco.lookwell.roleuser.service.RoleUserService;
+import cn.bdqn.tangcco.lookwell.roleuser.services.RoleUserServices;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -22,7 +22,7 @@ import java.util.Map;
 public class RoleUserController {
 
     @Resource
-    RoleUserService roleUserService;
+    RoleUserServices roleUserService;
 
     @ResponseBody
     @RequestMapping(value = "login" ,method = RequestMethod.POST)
