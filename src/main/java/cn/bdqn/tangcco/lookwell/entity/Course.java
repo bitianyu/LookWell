@@ -13,32 +13,31 @@ public class Course {
      course_descvarchar(30) NULL
      create_timedatetime NULL
      update_timedatetime NULL*/
-    private Integer CourseId;
+    private Integer courseId;
     private Project project;
-    private String CourseName;
-    private String CourseDesc;
-    private Date CreateTime;
-    private Date UpdateTime;
-
+    private String courseName;
+    private String courseDesc;
+    private Date createTime;
+    private Date updateTime;
 
     @Override
     public String toString() {
         return "Course{" +
-                "CourseId=" + CourseId +
+                "courseId=" + courseId +
                 ", project=" + project +
-                ", CourseName='" + CourseName + '\'' +
-                ", CourseDesc='" + CourseDesc + '\'' +
-                ", CreateTime=" + CreateTime +
-                ", UpdateTime=" + UpdateTime +
+                ", courseName='" + courseName + '\'' +
+                ", courseDesc='" + courseDesc + '\'' +
+                ", createTime=" + createTime +
+                ", updateTime=" + updateTime +
                 '}';
     }
 
     public Integer getCourseId() {
-        return CourseId;
+        return courseId;
     }
 
     public void setCourseId(Integer courseId) {
-        CourseId = courseId;
+        this.courseId = courseId;
     }
 
     public Project getProject() {
@@ -50,44 +49,44 @@ public class Course {
     }
 
     public String getCourseName() {
-        return CourseName;
+        return courseName;
     }
 
     public void setCourseName(String courseName) {
-        CourseName = courseName;
+        this.courseName = courseName;
     }
 
     public String getCourseDesc() {
-        return CourseDesc;
+        return courseDesc;
     }
 
     public void setCourseDesc(String courseDesc) {
-        CourseDesc = courseDesc;
+        this.courseDesc = courseDesc;
     }
 
     public Date getCreateTime() {
-        return CreateTime;
+        return createTime;
     }
 
     public void setCreateTime(Date createTime) {
-        CreateTime = createTime;
+        this.createTime = createTime;
     }
 
     public Date getUpdateTime() {
-        return UpdateTime;
+        return updateTime;
     }
 
     public void setUpdateTime(Date updateTime) {
-        UpdateTime = updateTime;
+        this.updateTime = updateTime;
     }
 
     public Course(Integer courseId, Project project, String courseName, String courseDesc, Date createTime, Date updateTime) {
-        CourseId = courseId;
+        this.courseId = courseId;
         this.project = project;
-        CourseName = courseName;
-        CourseDesc = courseDesc;
-        CreateTime = createTime;
-        UpdateTime = updateTime;
+        this.courseName = courseName;
+        this.courseDesc = courseDesc;
+        this.createTime = createTime;
+        this.updateTime = updateTime;
     }
 
     public Course() {

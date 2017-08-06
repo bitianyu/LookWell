@@ -15,73 +15,73 @@ public class Project {
      project_statusvarchar(4) NULL
      create_timedatetime NULL
      update_timedatetime NULL*/
-    private Integer ProjectId;
-    private String ProjectName;
-    private String ProjectDesc;
-    private String ProjectVersion;
-    private String ProjectStatus;
-    private Date CreateTime;
+    private Integer projectId;
+    private String projectName;
+    private String projectDesc;
+    private String projectVersion;
+    private String projectStatus;
+    private Date createTime;
     private Date updateTime;
 
     @Override
     public String toString() {
         return "Project{" +
-                "ProjectId=" + ProjectId +
-                ", ProjectName='" + ProjectName + '\'' +
-                ", ProjectDesc='" + ProjectDesc + '\'' +
-                ", ProjectVersion='" + ProjectVersion + '\'' +
-                ", ProjectStatus='" + ProjectStatus + '\'' +
-                ", CreateTime=" + CreateTime +
+                "projectId=" + projectId +
+                ", projectName='" + projectName + '\'' +
+                ", projectDesc='" + projectDesc + '\'' +
+                ", projectVersion='" + projectVersion + '\'' +
+                ", projectStatus='" + projectStatus + '\'' +
+                ", createTime=" + createTime +
                 ", updateTime=" + updateTime +
                 '}';
     }
 
     public Integer getProjectId() {
-        return ProjectId;
+        return projectId;
     }
 
     public void setProjectId(Integer projectId) {
-        ProjectId = projectId;
+        this.projectId = projectId;
     }
 
     public String getProjectName() {
-        return ProjectName;
+        return projectName;
     }
 
     public void setProjectName(String projectName) {
-        ProjectName = projectName;
+        this.projectName = projectName;
     }
 
     public String getProjectDesc() {
-        return ProjectDesc;
+        return projectDesc;
     }
 
     public void setProjectDesc(String projectDesc) {
-        ProjectDesc = projectDesc;
+        this.projectDesc = projectDesc;
     }
 
     public String getProjectVersion() {
-        return ProjectVersion;
+        return projectVersion;
     }
 
     public void setProjectVersion(String projectVersion) {
-        ProjectVersion = projectVersion;
+        this.projectVersion = projectVersion;
     }
 
     public String getProjectStatus() {
-        return ProjectStatus;
+        return projectStatus;
     }
 
     public void setProjectStatus(String projectStatus) {
-        ProjectStatus = projectStatus;
+        this.projectStatus = projectStatus;
     }
 
     public Date getCreateTime() {
-        return CreateTime;
+        return createTime;
     }
 
     public void setCreateTime(Date createTime) {
-        CreateTime = createTime;
+        this.createTime = createTime;
     }
 
     public Date getUpdateTime() {
@@ -93,12 +93,12 @@ public class Project {
     }
 
     public Project(Integer projectId, String projectName, String projectDesc, String projectVersion, String projectStatus, Date createTime, Date updateTime) {
-        ProjectId = projectId;
-        ProjectName = projectName;
-        ProjectDesc = projectDesc;
-        ProjectVersion = projectVersion;
-        ProjectStatus = projectStatus;
-        CreateTime = createTime;
+        this.projectId = projectId;
+        this.projectName = projectName;
+        this.projectDesc = projectDesc;
+        this.projectVersion = projectVersion;
+        this.projectStatus = projectStatus;
+        this.createTime = createTime;
         this.updateTime = updateTime;
     }
 
