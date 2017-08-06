@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.bdqn.tangcco.lookwell.gradename.dao.GradeNameMapper">
+    <!--添加班级名称唯一策略-->
+    <!--修改当前编号自加1-->
+    <update id="updateNumByGradeId" parameterType="Integer">
+        UPDATE
+            grade_name
+            SET
+            max_num=max_num+1
+            WHERE grade_id=#{gradeId}
+    </update>
+
+    <!--取出自加1后的编号-->
+    <select id="queryNumByGradeId" resultType="Integer" parameterType="Integer">
+        SELECT
+        max_num
+        FROM grade_name
+        WHERE grade_id=#{gradeId}
+    </select>
+
+</mapper>
