@@ -19,6 +19,22 @@ public class RoleUser {
 
     private Date updateTime;
 
+    public Tbuser getTbuser() {
+        return tbuser;
+    }
+
+    public void setTbuser(Tbuser tbuser) {
+        this.tbuser = tbuser;
+    }
+
+    public Role getRole() {
+        return role;
+    }
+
+    public void setRole(Role role) {
+        this.role = role;
+    }
+
     public Integer getRoluseId() {
         return roluseId;
     }
