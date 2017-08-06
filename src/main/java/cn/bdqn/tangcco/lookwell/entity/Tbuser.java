@@ -18,6 +18,15 @@ public class Tbuser {
     public Tbuser() {
     }
 
+    public Tbuser(Integer userId, String username, String password, Date lastLogin, Date createTime, Date updateTime) {
+        this.userId = userId;
+        this.username = username;
+        this.password = password;
+        this.lastLogin = lastLogin;
+        this.createTime = createTime;
+        this.updateTime = updateTime;
+    }
+
     public Integer getUserId() {
         return userId;
     }

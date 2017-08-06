@@ -7,13 +7,33 @@ public class RoleMenu {
 
     private Integer roleId;
 
+    private Role role;
+
     private Integer menuId;
+
+    private Menu menu;
 
     private String rolmenDesc;
 
     private Date createTime;
 
     private Date updateTime;
+
+    public Role getRole() {
+        return role;
+    }
+
+    public void setRole(Role role) {
+        this.role = role;
+    }
+
+    public Menu getMenu() {
+        return menu;
+    }
+
+    public void setMenu(Menu menu) {
+        this.menu = menu;
+    }
 
     public Integer getRolmenId() {
         return rolmenId;
